@@ -15,7 +15,7 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <label for="name">Name:</label>
-                                <input type="text" name="name" class="form-control" placeholder="Name">
+                                <input type="text" name="name" id="name" class="form-control" placeholder="Name">
                             </div>
                             <div class="col-md-6">
                                 <label for="duration_type">Duration Type:</label>
@@ -30,7 +30,7 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <label for="price">Price:</label>
-                                <input type="number" name="price" class="form-control" placeholder="Price">
+                                <input type="number" name="price" id="price" class="form-control" placeholder="Price">
                             </div>
                             <div class="col-md-6">
                                 <label for="status">Status:</label>
