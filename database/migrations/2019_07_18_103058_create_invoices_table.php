@@ -17,6 +17,7 @@ class CreateInvoicesTable extends Migration
             $table->bigIncrements('id');
             $table->bigInteger('user_id')->unsigned();
             $table->bigInteger('plan_id')->unsigned();
+            $table->integer('duration')->default(1);
             $table->string('invoice_no');
             $table->enum('payment_status', ['paid', 'unpaid'])->default('unpaid');
             $table->string('access_token')->nullable();

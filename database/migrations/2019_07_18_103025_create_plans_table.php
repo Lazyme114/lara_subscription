@@ -17,7 +17,6 @@ class CreatePlansTable extends Migration
             $table->bigIncrements('id');
             $table->string('name');
             $table->enum('duration_type', ['Yearly', 'Monthly'])->default('Monthly');
-            $table->integer('duration');
             $table->integer('price')->default(0);
             $table->text('description')->nullable();
             $table->enum('status', ['Active', 'In-active'])->default('In-active');
