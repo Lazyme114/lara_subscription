@@ -6,5 +6,13 @@ use Illuminate\Http\Request;
 
 class PlanController extends Controller
 {
-    //
+    public function index()
+    {
+        return view('plans.index');
+    }
+
+    public function create()
+    {
+        return view('plans.create');
+    }
 }
