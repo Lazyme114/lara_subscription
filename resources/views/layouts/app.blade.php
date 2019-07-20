@@ -18,6 +18,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('backend/css/select2.css') }}">
 </head>
 <body>
     <div id="app">
@@ -35,6 +36,9 @@
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
                             <a href="{{ route('plans.index') }}" class="nav-link">Plans</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ route('invoices.index') }}" class="nav-link">Invoice</a>
                         </li>
                     </ul>
 
@@ -78,5 +82,8 @@
             @yield('content')
         </main>
     </div>
+
+    <script src="{{ asset('backend/js/jquery-3.4.1.js') }}"></script>
+    <script src="{{ asset('backend/js/select2.full.js') }}"></script>
 </body>
 </html>
